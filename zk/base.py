@@ -5,11 +5,11 @@ from socket import AF_INET, SOCK_DGRAM, SOCK_STREAM, socket, timeout
 from struct import pack, unpack
 import codecs
 
-from zk import const
-from zk.attendance import Attendance
-from zk.exception import ZKErrorConnection, ZKErrorResponse, ZKNetworkError
-from zk.user import User
-from zk.finger import Finger
+from . import const
+from .attendance import Attendance
+from .exception import ZKErrorConnection, ZKErrorResponse, ZKNetworkError
+from .user import User
+from .finger import Finger
 
 
 def safe_cast(val, to_type, default=None):
